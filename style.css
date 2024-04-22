@@ -1,30 +1,80 @@
 body{
     background-color: #2C7DA0;
+    margin: 0;
+    padding: 200 50 50 50;
+    align-items: center;
 }
 
 button{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background-color:#01497C ;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #divbtn{
-    text-align: center;
-    margin: auto;
+
+    position: relative;
+    top: 120px; 
+    border :2px solid red;
+    width:fit-content;
+    height: fit-content;
+    margin:auto
 }
 #title{
-    text-align: center;font-family: "Libre Caslon Text", serif;
+    text-align: center;
+    font-family: "Libre Caslon Text", serif;
     font-weight: 400;
     font-style: normal;
+    position: relative;
+    bottom:190px ;
 
 }
 
 #text{
     text-align: center;
     position: relative;
-    top: 100;
+    top: 20;
     font-family: "Libre Caslon Text", serif;
     font-weight: 400;
     font-style: normal;
+}
+
+#img_1{
+    position: relative;
+    right: 300px;
+    
+}
+
+#img_2{
+    position: relative;
+    bottom: 500px;
+    right: 300px;
+    
+}
+
+#img_3{
+    position: relative;
+    bottom: 725px;
+    left: 290px;
+    
+}
+
+#img_4{
+    position: relative;
+    bottom: 675px;
+    left: 290px;
+    
+}
+
+#img_5{
+    position: relative;
+    bottom: 675px;
+}
+
+#flowers{
+    text-align: center;
 }
