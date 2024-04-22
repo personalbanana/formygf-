@@ -9,10 +9,22 @@ button{
     background-color:#01497C ;
 }
 
-.divbtn{
+#divbtn{
     text-align: center;
     margin: auto;
 }
 #title{
-    content: "dkfj";
+    text-align: center;font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#text{
+    text-align: center;
+    position: relative;
+    top: 100;
+    font-family: "Libre Caslon Text", serif;
+    font-weight: 400;
+    font-style: normal;
 }
