@@ -2,9 +2,11 @@
 const redbutton = document.getElementById("btn") ;
 let playarea = document.getElementById("divbtn") ;
 let newbutton = document.createElement("BUTTON");
+let badbutton = document.getElementById("bad");
 let wrd = document.getElementById("text") ;
 let count = 0 ;
 let newcount = 0 ;
+let badcount= 0;
 let img1 = document.getElementById("img_1") ;
 let img2 = document.getElementById("img_2") ;
 let img3 = document.getElementById("img_3") ;
@@ -15,9 +17,9 @@ redbutton.textContent = "Click Me" ;
 //eventlisenter
 redbutton.addEventListener('click', () => onButtonClick()) ;
 newbutton.addEventListener('click', () => onnewButtonClick()) ;
-
+badbutton.addEventListener('click', () => onbadButtonClick()) ;
 //redbutton
-
+playarea.removeChild(badbutton)
 function onButtonClick() {count ++;
 
 
@@ -91,18 +93,50 @@ function onButtonClick() {count ++;
         
         if (count == 14) {
             wrd.innerText = "Good.";
+            redbutton.innerText = "Click me"
+
+        }
+
+        else if (count == 15){
+            wrd.innerText = "I dont know what else to put..."
         }
         
+        else if (count == 16){
+            wrd.innerText = "how are you?"
+            playarea.appendChild(badbutton);
+            badbutton.innerText = "Bad";
+            redbutton.innerText = "Good";
+            redbutton.style.color = "green";
+
+        }
+
+        else if (count == 17){
+            wrd.innerText = "YAYYAYAYAAYA!!!!";
+            redbutton.innerText = "Click me";
+            redbutton.style.color = "white";
+            playarea.removeChild(badbutton);
+
+        }
+
+        else if (count == 18){
+            wrd.innerText = "Go tell me about it pls:)"
+        }
+
+        else if (count == 19){
+            wrd.innerText = "The End.😃";
+            playarea.removeChild(redbutton);
         }
 
         
- 
+        }
+
+
 
 //greenbutton
 
 function onnewButtonClick() {newcount ++;
 
-       
+
     if (newcount == 1)  {
         wrd.innerText = "Oh...";
         playarea.removeChild(redbutton);
@@ -125,25 +159,27 @@ function onnewButtonClick() {newcount ++;
     if (newcount == 6)  {
         wrd.innerText = "Bye.";
         playarea.removeChild(newbutton);
-    }
-else if (newcount == 34)  {wrd.innerText = "";}
-
-else if (newcount == 200)  {wrd.innerText = "Oh...";
-                            playarea.appendChild(redbutton)}
-
-else if (newcount == 210)  {wrd.innerText = "You're still here.";}
-
-else if (newcount == 214)  {wrd.innerText = "Why?";}
-
-else if (newcount == 217)  {wrd.innerText = "Go do somthing with your life";}
-
-else if (newcount == 220)  {wrd.innerText = "Weirdo.";
-                            playarea.removeChild(redbutton)
-                            playarea.removeChild(newbutton)
 
 }
+}
+
+function onbadButtonClick() {badcount ++;
+    if (badcount == 1)  {wrd.innerText = "oh no";
+    badbutton.innerText = "Click me";
+    badbutton.style.color = "white";
+    playarea.removeChild(redbutton);
+}
+    if (badcount == 2)  {wrd.innerText = "Thas no Good";}
+
+    if (badcount == 3)  {wrd.innerText = "Talk to me about it please";}
+
+    if (badcount == 4)  {wrd.innerText = "I cant really do anything through here so go Talk to me please";
+    playarea.removeChild(badbutton);
 
 }
+}
+
 
 //else if (count == )  {wrd.innerText = "";}
 //else if (newcount == )  {wrd.innerText = "";}
+// else if (badcount == )  {wrd.innerText = "";}
