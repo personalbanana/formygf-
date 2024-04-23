@@ -19,7 +19,7 @@ button{
 
     position: relative;
     top: 120px; 
-    border :2px solid red;
+    border :2px transparent red;
     width:fit-content;
     height: fit-content;
     margin:auto
